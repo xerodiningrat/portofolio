@@ -1,0 +1,798 @@
+:root {
+  --primary-color: #1e2124;
+  --secondary-color:  	#708090;
+  --font-color: #fff;
+  --bg-color: #1e2124;
+}
+
+[data-theme="dark"] {
+  --primary-color: #fff;
+  --secondary-color: #ecf0f1;
+  --font-color: #000;
+  --bg-color: #fff;
+
+}
+
+.bg-footer {
+  position: relative;
+  background: url('../../upload/footer.png') no-repeat center center var(--secondary-color);
+  width: 100%;
+  border-top: 1px;
+}
+
+.product-tile__clip-path[data-v-10b0ebbe] {
+  display: flex;
+padding: 0;
+  padding-top: 0px;
+padding-top: 0px;
+margin-top: -39px;
+width: 100%;
+height: 50px;
+position: absolute;
+top: -10px;
+background-color: var(--secondary-color);
+clip-path: polygon(0 23%,6% 72%,12% 47%,18% 70%,24% 51%,32% 80%,38% 47%,44% 80%,50% 49%,56% 70%,60% 86%,66% 42%,72% 65%,78% 38%,84% 64%,90% 17%,96% 20%,100% 1%,100% calc(100% + 1px),0 calc(100% + 1px));
+-webkit-clip-path: polygon(0 23%,6% 72%,12% 47%,18% 70%,24% 51%,32% 80%,38% 47%,44% 80%,50% 49%,56% 70%,60% 86%,66% 42%,72% 65%,78% 38%,84% 64%,90% 17%,96% 20%,100% 1%,100% calc(100% + 1px),0 calc(100% + 1px));
+}
+
+.footer-copyright {
+  warna: putih;
+} 
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9); /* Ganti dengan warna latar sesuai keinginan Anda */
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .container{
+    margin-top: 10vh;
+  }
+
+    .navbar-nav {
+      text-align: center;
+    }
+
+    .profile-image{
+      max-width: 600px;
+      height: auto;
+      margin-right: 10vh;
+      margin-left: 20vh;
+    }
+
+    .navbar.scrolled {
+    background-color: #ffffff; /* Ganti dengan warna latar yang Anda inginkan */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+    .navbar-nav .nav-item {
+      display: inline-block;
+      margin: 0 8px;
+    }
+    .navbar-nav .nav-link {
+      color: #333;
+    }
+    .navbar-nav .nav-link.orangered {
+      color: orangered;
+    }
+    .navbar-brand {
+      color: orangered;
+      margin-left: 20px;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+    .header {
+      text-align: left;
+      padding: 100px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+    .name {
+      font-size: 36px;
+      font-weight: bold;
+      color: orangered;
+      font-family: 'Roboto Slab', serif;
+    }
+    .title {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .description {
+      font-size: 18px;
+      color: #444;
+      margin-top: 20px;
+    }
+    .download-button {
+      margin-top: 30px;
+    }
+    .profile-image1 {
+      max-width: 600px;
+      height: auto;
+      margin-right: 10vh;
+      margin-left: 20vh;
+    }
+    .dark-mode {
+      margin-left: 15px;
+      margin-right: auto;
+      position: relative;
+    }
+    .dark-mode-toggle {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px solid #ccc;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      text-align: center;
+      line-height: 30px;
+      font-size: 14px;
+      color: #333;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .dark-mode-toggle:hover {
+      border-color: white;
+      transform: scale(1.1);
+    }
+
+    #developer-type {
+      font-family: bold;
+    }
+
+    .scroll-arrow:hover {
+      transform: translateY(-5px);
+  }
+    
+
+    .scroll-down {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      z-index: 1;
+      animation: floatUpDown 2s infinite;
+    }
+
+    .scroll-text {
+      font-size: 16px;
+      color: #888;
+    }
+
+    .scroll-arrow {
+      display: block;
+      margin-top: 10px;
+      font-size: 15px;
+      color: black;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .scroll-arrow:hover {
+      color: orangered;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+          transform: translateY(0);
+      }
+      50% {
+          transform: translateY(-15px);
+      }
+  }
+
+  .section-title{
+    font-family: 'Kanit', sans-serif;
+
+  }
+
+    .chat-icon {
+      position: fixed;
+      bottom: 40px;
+      right: 20px;
+      font-size: 35px;
+      color: black;
+      cursor: pointer;
+      z-index: 2;
+      transition: transform 0.2s;
+    }
+
+    .chat-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .about{
+      min-height: 100vh;
+      margin-top: 25vh;
+    }
+
+
+.about {
+  min-height: 100vh;
+  margin-top: 12vh;
+}
+
+.about-content {
+  margin-top: 15vh; /* Atur margin atas pada teks sesuai keinginan Anda */
+}
+
+.about-image{
+    margin-top: 0vh;
+    margin-left: -17vh;
+}
+
+.section-title{
+  margin-top: 10vh;
+}
+
+.about .download-button{
+  margin-top: 0vh;
+}
+
+.skills {
+  min-height: 100vh;
+  margin-top: -10vh;
+  
+}
+
+.bullet-images {
+  background-color: white;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100vh;
+  height: 50vh;
+  margin-left: 20vh;
+  margin-top: 15vh;
+  position: relative;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.image-grid1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  margin-top: 50px;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5vh;
+}
+
+.image-name {
+  text-align: center;
+}
+
+.tools-text{
+  margin-left: -10vh;
+  margin-top: 1vh;
+  font-size: 10px;
+}
+
+.tools-icons{
+  margin-left: 15vh;
+  margin-top: -15px;
+  font-size: 10px;
+}
+
+.text-container {
+  position: absolute;
+  top: 100px;
+  right: -250px; /* Sesuaikan jarak dari border kanan */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Teks berada di sisi kanan */
+  text-align: right;
+}
+
+.border-text-inner, .bottom-text-inner1 {
+  margin: 0;
+}
+
+.border-text-inner{
+  font-size: 30px;
+  color: orangered;
+}
+
+.bottom-text{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.education{
+  min-height: 100vh;
+}
+
+.education-image{
+  max-width: 50vh;
+  margin-top: 5vh;
+  margin-left: 5vh;
+}
+
+.education-content{
+  margin-top: 20vh;
+}
+
+.education-title{
+  color: orangered;
+}
+
+.game {
+  min-height: 100vh;
+  margin-top: 12vh;
+}
+
+.game-item {
+  background-color: white;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+  transition: transform 0.2s;
+  max-width: 500px;
+  height: 35vh;
+  border-radius: 10px;
+}
+
+.game-item:hover {
+  transform: scale(1.05);
+}
+
+.game-image img {
+  max-width: 40%;
+  height: auto;
+}
+
+.game-text {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.play-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0010f5;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none !important;
+  
+}
+
+.play-button:hover {
+  background-color: orangered;
+}
+
+.play-button i {
+  margin-right: 5px;
+}
+
+.play-button a {
+  text-decoration: none !important;
+
+}
+
+
+.portfolio{
+  min-height: 100vh;
+  margin-top: 12vh;
+}
+
+/* Add this CSS to your existing stylesheet */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.portfolio-item {
+  background-color: white;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin: 40px 0; /* Add margin top and bottom */
+  position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-top: 13vh;
+}
+
+.portfolio-image img {
+  width: 100%;
+  transition: filter 0.3s ease;
+  max-height: 30vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.portfolio-text {
+  margin-top: 15px;
+}
+
+.portfolio-text strong {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.portfolio-text p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.portfolio-buttons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.portfolio-buttons .btn {
+  margin-right: 10px;
+}
+
+.portfolio-item.active .portfolio-image img {
+  filter: none; /* Remove blur effect */
+}
+
+.portfolio-icons {
+  text-align: center;
+}
+
+.portfolio-item:hover .portfolio-image {
+  filter: blur(5px); /* Adjust the blur amount as needed */
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.github-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  text-decoration: none;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.portfolio-image:hover .github-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+
+.github-icon:hover {
+  transform: scale(1.2);
+}
+
+
+.blog{
+  min-height: 100vh;
+  margin-top: 12vh;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.popup-item{
+  padding: 30px;
+  margin: 40px 0; /* Add margin top and bottom */
+  position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-top: 13vh;
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-github{
+  display: flex;
+  gap: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+
+.popup-text img{
+  width: 100%;
+  transition: filter 0.3s ease;
+  max-height: 30vh;
+  border-radius: 10px;
+  color: black;
+}
+
+.img-popup img{
+  width: 16px;
+}
+
+.img-popup span{
+  font-size: 10px;
+}
+
+.popup-title strong{
+  font-family: 'Indie Flower', cursive;
+}
+
+.popup-title img{
+  margin-top: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.close-popup{
+  background-color: red;
+  color: white;
+}
+
+.img-popup{
+  background-color: white;
+  border: 2px solid black;
+  width: 79px;
+}
+
+.popup-content strong{
+  font-family: 'Indie Flower', cursive;
+}
+
+.popup-content p{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.github-popup{
+  background-color: white;
+  border: 2px solid black;
+}
+
+.popup-buttons .github-popup span{
+  color: black;
+}
+
+.popup-buttons .img-popup span{
+  color: black;
+}
+
+.popup-buttons .btn-secondary i{
+  color: black;
+}
+
+.portfolio-text p{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.portfolio-buttons .btn-secondary{
+  background-color: #0010f5;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-buttons .btn-primary{
+  background-color: white;
+  border: 2px solid #0010f5;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-buttons .btn-primary i{
+  color: #0010f5;
+}
+
+.portfolio-buttons .btn-primary span{
+  color: #0010f5;
+  font-family: 'Roboto Condensed', sans-serif;
+  
+}
+
+
+.portfolio-buttons .btn-primary:hover {
+  border-color: white;
+  transform: scale(1.1);
+}
+
+.portfolio-buttons .btn-secondary:hover {
+  border-color: white;
+  transform: scale(1.1);
+}
+
+.portfolio-buttons .btn-secondary span{
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.portfolio-text strong{
+  font-family: 'Indie Flower', cursive;
+}
+
+/* Style for Contact Section */
+.contact {
+  min-height: 100vh;
+  margin-top: 12vh;
+}
+
+.contact .section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form form {
+  max-width: 100%;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form .form-control {
+  margin-bottom: 20px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-info {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-form,
+  .contact-info {
+    padding: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 50px 0;
+  }
+
+  .profile-image {
+    margin: 20px auto;
+    width: 150vh;
+  }
+  .bullet-images {
+    background-color: white;
+    border: 2px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    max-width: 65vh;
+    height: 50vh;
+    margin-left: 3vh;
+    margin-top: 15vh;
+    margin: 20px auto;
+  }
+}
+
+/* Gaya untuk ukuran layar kecil */
+@media (max-width: 576px) {
+  .header {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 576px) {
+  .profile-image {
+    margin: 20px auto;
+    max-width: 100%; /* Ubah ukuran gambar sesuai keinginan Anda */
+    margin-top: 100px;
+  }
+  .scroll-down {
+    display: none;
+  }
+  .profile-image1 {
+    max-width: 60%; /* Ubah ukuran gambar sesuai keinginan Anda */
+    margin-left: 20vh;
+  }
+  .bullet-images {
+    background-color: white;
+    border: 2px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    max-width: 55vh;
+    height: 50vh;
+    margin-left: 3vh;
+    margin-top: 15vh;
+    margin: 20px auto;
+  }
+  .text-container {
+    position: relative;
+    margin-top: 10vh;
+    margin-right: 0vh; /* Sesuaikan jarak dari border kanan */
+    
+  }
+  .education-image {
+    margin: 20px auto;
+    max-width: 100%; /* Ubah ukuran gambar sesuai keinginan Anda */
+    margin-top: 100px;
+  }
+}
